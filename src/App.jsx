@@ -1,7 +1,7 @@
 //COMPONENTS
-import Navbar from './components/Navbar'
-import Container from './components/Container'
-import Footer from './components/Footer'
+import Navbar from './layouts/Navbar'
+import Container from './layouts/Container'
+import Footer from './layouts/Footer'
 
 
 
