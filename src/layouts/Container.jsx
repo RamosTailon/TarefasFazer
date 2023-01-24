@@ -2,12 +2,13 @@
 import ContainerStyle from '../styles/ContainerStyle'
 
 //COMPONENTS
-import AddButton from '../components/AddButton'
+import ToDoList from '../components/ToDoList'
 
 const Container = () => {
   return (
     <ContainerStyle>
-      <AddButton />
+      <h2>Qual planejamento de hoje?</h2>
+      <ToDoList />
     </ContainerStyle>
   )
 }

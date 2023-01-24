@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const AddButtonStyle = styled.div`
+const AddButtonStyle = styled.form`
     display: flex;
 		align-items: center;
 		gap: 10px;
@@ -10,11 +10,13 @@ const AddButtonStyle = styled.div`
 		border-radius: 10px;
 		
 		padding-left: 30px;
-		width: 10em;
+		width: 16em;
 		height: 3.5em;
 
-		i{
-			width: 35px;
+		overflow: hidden;
+
+		button{
+			padding: 0 10px;
 			height: 40px;
 			background-color: #cc8556ff;
 			display: flex;
@@ -22,11 +24,19 @@ const AddButtonStyle = styled.div`
 			justify-content: center;
 			cursor: pointer;
 			transition: .4s;
+			border: none;
 		}
 
-		i:hover{
+		button:hover{
 			transform: translateY(-5px);
 			background-color: #f3a673;
+		}
+
+		input{
+			height: 90%;
+			border: none;
+			outline: none;
+			font-size: 1.1em;
 		}
 `
 

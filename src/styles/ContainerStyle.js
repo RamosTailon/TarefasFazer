@@ -3,9 +3,10 @@ import styled from 'styled-components';
 
 const ContainerStyle = styled.div`
     background-color: #e6e6e6ff;
-    height: 79vh;
+    min-height: 73vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
     padding-top: 45px;
 `
