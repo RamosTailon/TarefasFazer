@@ -15,7 +15,6 @@ const ToDoList = () => {
 
 		const newToDos = [toDo, ...toDos];
 		setToDos(newToDos)
-		// console.log(toDo, ...toDos)
 	}
 
 	const completeToDo = id => {
