@@ -9,7 +9,10 @@ const ToDoItemStyle = styled.div`
     margin-top: 15px;
     padding: 8px 20px;
 
-    max-width: 20em;
+    width: 20em;
+    @media (max-width: 415px) {
+        width: 10em;
+    }
 
     font-size: 1.2em;
     color: #fff;

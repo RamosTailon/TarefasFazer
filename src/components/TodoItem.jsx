@@ -8,7 +8,7 @@ import ToDoItemStyle from '../styles/ToDoItemStyle'
 import { FaTrashAlt } from 'react-icons/fa'
 import { BsCheckLg } from 'react-icons/bs'
 
-const TodoItem = ({ todos, completeToDo }) => {
+const TodoItem = ({ todos, completeToDo, removeToDo }) => {
 	const [edit, setEdit] = useState({
 		id: null,
 		value: ''
@@ -21,7 +21,7 @@ const TodoItem = ({ todos, completeToDo }) => {
 			</div>
 			<div className="icons">
 				<BsCheckLg id="define" onClick={(() => completeToDo(todo.id))} />
-				<FaTrashAlt id="delete" />
+				<FaTrashAlt id="delete" onClick={(() => removeToDo(todo.id))} />
 			</div>
 		</ToDoItemStyle>
 	))

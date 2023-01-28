@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+//CSS
+import ToDoListStyle from '../styles/ToDoListStyle';
 
 //COMPONENTS
 import AddButton from './AddButton'
@@ -26,16 +28,22 @@ const ToDoList = () => {
 		})
 		setToDos(updateTodos)
 	}
-	
-	// const completeToDo = id => {
-	// 	alert('função completa')
-	// }
+
+	const removeTD = id => {
+		const removeArr = [...toDos].filter(toDo => toDo.id !== id)
+
+		setToDos(removeArr)
+	}
 
 	return (
-		<div>
+		<ToDoListStyle>
 			<AddButton tasks={addTodo} />
-			<TodoItem todos={toDos} completeToDo={completeToDo} />
-		</div>
+			<TodoItem
+				todos={toDos}
+				completeToDo={completeToDo}
+				removeToDo={removeTD}
+			/>
+		</ToDoListStyle>
 	)
 }
 
