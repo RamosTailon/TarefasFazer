@@ -8,16 +8,29 @@ import ToDoItemStyle from '../styles/ToDoItemStyle'
 import { FaTrashAlt } from 'react-icons/fa'
 import { BsCheckLg } from 'react-icons/bs'
 
-const TodoItem = ({ todos, completeToDo, removeToDo }) => {
+const TodoItem = ({ todos, completeToDo, editToDo, removeToDo }) => {
 	const [edit, setEdit] = useState({
 		id: null,
 		value: ''
 	});
 
+	const submitUpdate = value => {
+		editToDo(edit.id, value);
+		setEdit({
+			id: null,
+			value: ''
+		})
+	}
+
+	if (edit.id) {
+		return <AddButton tasks={submitUpdate} />
+	}
+
 	return todos.map((todo, index) => (
 		<ToDoItemStyle className={todo.isComplete ? 'todo_row complete' : 'todo_row'} key={index}>
-			<div key={todo.id}>
+			<div key={todo.id} onClick={(() => setEdit({ id: todo.id, value: todo.text }))}>
 				{todo.text}
+
 			</div>
 			<div className="icons">
 				<BsCheckLg id="define" onClick={(() => completeToDo(todo.id))} />
