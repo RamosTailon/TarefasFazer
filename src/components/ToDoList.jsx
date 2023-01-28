@@ -26,6 +26,10 @@ const ToDoList = () => {
 		})
 		setToDos(updateTodos)
 	}
+	
+	// const completeToDo = id => {
+	// 	alert('função completa')
+	// }
 
 	return (
 		<div>

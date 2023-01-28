@@ -1,6 +1,9 @@
 import { useState } from "react"
 import AddButton from "./AddButton"
 
+//CSS
+import ToDoItemStyle from '../styles/ToDoItemStyle'
+
 //ICONS
 import { FaTrashAlt } from 'react-icons/fa'
 import { BsCheckLg } from 'react-icons/bs'
@@ -12,15 +15,15 @@ const TodoItem = ({ todos, completeToDo }) => {
 	});
 
 	return todos.map((todo, index) => (
-		<div className={todo.isComplete ? 'todo_row complete' : 'todo_row'} key={index}>
-			<div key={todo.id} onClick={(() => completeToDo(todo.id))}>
+		<ToDoItemStyle className={todo.isComplete ? 'todo_row complete' : 'todo_row'} key={index}>
+			<div key={todo.id}>
 				{todo.text}
 			</div>
 			<div className="icons">
-				<BsCheckLg />
-				<FaTrashAlt />
+				<BsCheckLg id="define" onClick={(() => completeToDo(todo.id))} />
+				<FaTrashAlt id="delete" />
 			</div>
-		</div>
+		</ToDoItemStyle>
 	))
 }
 
