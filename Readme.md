@@ -22,8 +22,10 @@ Data do início: 24/01/2023
 
 As maiores dificuldades foram: conectar as funções e seus retornos por props; e consultar o id do objeto para sua edição. Para solucionar o problema procurei ajuda no canal do youtube Brian Design.
 
-Um grande desafio foi poder expor o trabalho e deixa-lo público, atraves de um serviço de provedor. usei o Netlify para fazer o deploy na aplicação em React.
- 
+O maior aprendizado foi trabalhar com responsividade no React.JS, através de um css escopado pude trabalhar com media queries.
+
+Um grande desafio foi poder expor o trabalho e deixa-lo público, através de um serviço de provedor. usei o Netlify para fazer o deploy na aplicação em React.
+
 # :camera_flash: Screenshots <a name="id03"></a>
 
 <br/>
@@ -42,8 +44,11 @@ Um grande desafio foi poder expor o trabalho e deixa-lo público, atraves de um 
 
 # :heavy_check_mark: Links <a name="id04"></a>
 
-Link para acessar: LINK
-link para o video auxiliar do Brian Design: https://www.youtube.com/watch?v=E1E08i2UJGI
+- Link para acessar: https://front-tarefasafazer.netlify.app/
+
+<br/>
+
+- Link para o video auxiliar do Brian Design: https://www.youtube.com/watch?v=E1E08i2UJGI
 
 # 🛠 Feito com <a name="id05"></a>
 
